@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wd="urn:com.workday.report/WorkdayACHAPIPayments" xmlns:nyw="urn:com.netyourwork/aod" elementFormDefault="qualified" attributeFormDefault="qualified" targetNamespace="urn:com.workday.report/WorkdayACHAPIPayments">
+  <xsd:element name="Report_Data" type="wd:Report_DataType"/>
+  <xsd:simpleType name="RichText">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:complexType name="Report_EntryType">
+    <xsd:sequence>
+      <xsd:element name="Payment" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Transaction_Number" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Company" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Counter" type="xsd:decimal" minOccurs="0"/>
+      <xsd:element name="Row_Sequence" type="xsd:decimal" minOccurs="0"/>
+      <xsd:element name="Payment_Type" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="From_Bank_ID_Number" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Immediate_Destination" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Immediate_Origin" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="File_Create_or_Transmission_Date" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="File_Create_or_Transmission_Time" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Immediate_Destination_Name" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Company_Descriptive_Date" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Effective_Entry_Date" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Originating_DFI_ID" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Transaction_Code" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Bank_Name" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Receiving_DFI_Identification" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Check_Digit" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="DFI_Account_Number" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Amount" type="xsd:decimal" minOccurs="0"/>
+      <xsd:element name="Individual_Identification_Number" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Individual_Name_or_Receiving_Company_Name" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Discretionary_Data" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Trace_Number" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Company_Entry_Description" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Pay_Type" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Pay_Method" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Addenda" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Adtnl_Field01" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Adtnl_Field02" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Adtnl_Field03" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Adtnl_Field04" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Adtnl_Field05" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Adtnl_Field06" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Report_DataType">
+    <xsd:sequence>
+      <xsd:element name="Report_Entry" type="wd:Report_EntryType" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
