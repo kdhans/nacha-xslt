@@ -373,7 +373,7 @@
         <!-- Identification Number -->
         <xsl:value-of select="this:pad-to-length($record/Individual_Identification_Number, 15)" />
         <!-- Street Address -->
-        <xsl:value-of select="this:pad-to-length($record/Adtnl_Field02, 35)" />
+        <xsl:value-of select="this:pad-to-length($record/Address, 35)" />
         <!-- Reserved -->
         <xsl:value-of select="this:pad-to-length($blank, 34)" />
         <!-- Entry Detail -->
@@ -392,9 +392,9 @@
         <!-- Addenda Type Code -->
         <xsl:value-of select="this:pad-to-length($addendaType16Code, 2)" />
         <!-- City and State -->
-        <xsl:value-of select="this:pad-to-length(concat($record/Adtnl_Field03,'*',$record/Adtnl_Field04 ,'\'), 35)" />
+        <xsl:value-of select="this:pad-to-length(concat($record/City,'*',$record/State ,'\'), 35)" />
         <!-- Country and Zip -->
-        <xsl:value-of select="this:pad-to-length(concat($record/Adtnl_Field05,'*',$record/Adtnl_Field06 ,'\'), 35)" />
+        <xsl:value-of select="this:pad-to-length(concat($record/Country,'*',$record/Zip ,'\'), 35)" />
         <!-- Reserved -->
         <xsl:value-of select="this:pad-to-length($blank, 14)" />
         <!-- Entry Detail -->

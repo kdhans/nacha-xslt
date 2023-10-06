@@ -35,12 +35,12 @@
       <xsd:element name="Pay_Type" type="xsd:string" minOccurs="0"/>
       <xsd:element name="Pay_Method" type="xsd:string" minOccurs="0"/>
       <xsd:element name="Addenda" type="xsd:string" minOccurs="0"/>
-      <xsd:element name="Adtnl_Field01" type="xsd:string" minOccurs="0"/>
-      <xsd:element name="Adtnl_Field02" type="xsd:string" minOccurs="0"/>
-      <xsd:element name="Adtnl_Field03" type="xsd:string" minOccurs="0"/>
-      <xsd:element name="Adtnl_Field04" type="xsd:string" minOccurs="0"/>
-      <xsd:element name="Adtnl_Field05" type="xsd:string" minOccurs="0"/>
-      <xsd:element name="Adtnl_Field06" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="UniqueID" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Address" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="City" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="State" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Country" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Zip" type="xsd:string" minOccurs="0"/>
     </xsd:sequence>
   </xsd:complexType>
   <xsd:complexType name="Report_DataType">
