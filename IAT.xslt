@@ -184,8 +184,8 @@
         <xsl:value-of select="this:pad-to-length($blank, 13)" />
         <!-- Amount -->
         <xsl:value-of select="this:pad-to-length(format-number(abs(Amount) * 100, '#'), 10, '0', 'right')" />
-        <!-- Individual Identification Number -->
-        <xsl:value-of select="this:pad-to-length(Individual_Identification_Number, 35, ' ', 'right')" />
+        <!-- DFI Identification Number (Account Number) -->
+        <xsl:value-of select="this:pad-to-length(DFI_Identification_Number, 35, ' ', 'right')" />
         <!-- Reserved - left blank -->
         <xsl:value-of select="this:pad-to-length($blank, 2)" />
         <!-- Gateway Operator Screening Originator - left blank -->
